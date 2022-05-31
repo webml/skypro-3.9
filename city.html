@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Город</title>
+</head>
+
+<body>
+    <script>
+        const params = location.search.slice(1).split('&').reduce((allParams, getItem) => {
+            const pair = getItem.split('=');
+
+            allParams[pair[0]] = pair[1];
+
+            return allParams;
+        }, {});
+
+        const come = document.createElement('h1');
+        come.textContent = 'Пункт назначения ' + params.city;
+        document.body.append(come);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>boringBreak</title>
+</head>
+
+<body>
+    <main>
+        <div class="content">
+            <h3>Задание 1</h3>
+            <form class="form">
+                <div class="form__field">
+                    <label for="login" class="form__field-label">Login</label>
+                    <input type="text" class="input" id="login" required>
+                </div>
+                <div class="form__field">
+                    <label for="password" class="form__field-label">Password</label>
+                    <input type="password" class="input" id="password" required>
+                </div>
+                <button type="submit" class="btn">Enter</button>
+            </form>
+            <hr width="200">
+            <h3>Задание 2</h3>
+            <form action="city.html" class="form">
+                <div class="form__field">
+                    <label for="select" class="form__field-label">Город</label>
+                    <select class="input" id="select" name="city" required>
+                        <option value="" selected disabled>Выберите город…</option>
+                        <option value="Иркутск">Иркутск</option>
+                        <option value="Сургут">Сургут</option>
+                        <option value="Самара">Самара</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">Enter</button>
+            </form>
+            <hr width="200">
+            <h3>Задание 3</h3>
+            <form class="form check-form">
+                <div class="form__field">
+                    <label for="checkbox" class="form__field-label">Согласен на полезную рассылку</label>
+                    <input type="checkbox" name="checkbox" id="checkbox" class="checkbox" required>
+                </div>
+                <button type="submit" class="btn">Enter</button>
+            </form>
+            <h3>Задание 4</h3>
+            <form class="form radio-form">
+                <div class="form__field">
+                    <p>Гендер</p>
+                    <label for="male" class="form__field-label">Мужской</label>
+                    <input type="radio" name="radio" id="male" class="male" value="male" required>
+                    <label for="female" class="form__field-label">Женский</label>
+                    <input type="radio" name="radio" id="female" class="female" value="female" required>
+                </div>
+                <button type="submit" class="btn">Enter</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>Сделал Любарец Михаил</p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
